@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+/* HEADERS */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+    background: rgba(27, 1, 145, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(1, 46, 172, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(14, 94, 243, 0.3);
+}
+
+.logo img{
+    cursor: pointer;
+    width: 100px;
+    transition: .4s;
+}
+
+.logo img:hover {
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul a{
+    color: black;
+    font-size: 20px;
+    transition: .4s;
+}
+
+nav ul a:hover{
+    color: gray;
+}
+
+/* MAIN */
+
+main {
+    background-image: url('./assets/lindo-retrato-de-cachorro.jpg');
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-generator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 10px;
+    height: 500px;
+    flex-direction: column;
+
+}
+
+.card-generator  button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 3px;
+    height: 40px;
+    width: 130px;
+    outline: none;
+    border: 2px solid blue;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.card-generator  button:hover {
+    background-color: blue;
+    color: white;
+}
+#generator {
+
+    height: 100%;
+}
+#generator img {
+    width: 300px;
+    border-radius: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+#generator img:hover {
+   padding: 5px;
+}
